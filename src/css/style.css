@@ -129,7 +129,7 @@ main{
 
 .selecao-de-personagens .lista-de-personagens .jogardor-2-selecionado:hover{
     transform: scale(1.07);
-    animation: c-glowing-red .3s ease-in-out infinite;
+    animation: c-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
     z-index: 2;
 }
@@ -146,7 +146,9 @@ main{
     animation-direction: alternate;
 }
 
+
 .selecao-de-personagens .lista-de-personagens .selecionado .tag{
+    left: 5px;
     display: block;
     color: var(--cor-azul-media);
     animation: text-glowing-blue .3s ease-in-out infinite;
@@ -154,9 +156,30 @@ main{
 }
 
 .selecao-de-personagens .lista-de-personagens .jogardor-2-selecionado .tag{
+    right: 5px;
     display: block;
     color: var(--cor-vermelha-fraca);
     animation: text-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
+.selecao-de-personagens .lista-de-personagens .jogardor-2-selecionado .tag2{
+    display: none;
+    font-family: 'times New Roman', Times, serif;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: var(--cor-azul-media);
+    transition: opacity .3 ease-in-out;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+
+
+.selecao-de-personagens .lista-de-personagens .jogardor-2-selecionado.selecionado .tag2{
+    display: block;
+    color: var(--cor-azul-media);
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
