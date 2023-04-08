@@ -2,9 +2,7 @@ const painelDeSelecaoDePersonagem = document.querySelectorAll('.personagem')
 
 painelDeSelecaoDePersonagem.forEach(personagem => {
 
-    personagem.addEventListener("mouseenter", () => {
-
-         
+    personagem.addEventListener("mouseenter", () => { 
         
         const personagemSelecionado = document.querySelector(".selecionado")
         personagemSelecionado.classList.remove("selecionado")
@@ -19,7 +17,6 @@ painelDeSelecaoDePersonagem.forEach(personagem => {
         const iamgemDoPersonagemDoJogador1 = document.getElementById("personagem-jogador-1")
         iamgemDoPersonagemDoJogador1.src = `src/img/${idPersonagemSelecionado}.png`
         
-
     })
 }) 
 

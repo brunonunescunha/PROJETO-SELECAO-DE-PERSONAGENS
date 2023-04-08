@@ -146,7 +146,6 @@ main{
     animation-direction: alternate;
 }
 
-
 .selecao-de-personagens .lista-de-personagens .selecionado .tag{
     left: 5px;
     display: block;
@@ -174,8 +173,6 @@ main{
     animation: text-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
 }
-
-
 
 .selecao-de-personagens .lista-de-personagens .jogardor-2-selecionado.selecionado .tag2{
     display: block;
