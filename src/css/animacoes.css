@@ -37,3 +37,13 @@
       text-shadow: 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-vermelha-fraca), 0 0 5px var(--cor-vermelha-fraca), 0 0 .5px var(--cor-vermelha-fraca), 0 0 5px var(--cor-vermelha-fraca), 0 0 2px var(--cor-vermelha-fraca)
     }
   }
+
+  @keyframes text-glowing-orange {
+    0% {
+      text-shadow: 0 0 1px var(--cor-marrom-fraco), 0 0 1px var(--cor-marrom-fraco), 0 0 1px var(--cor-marrom-fraco), 0 0 1px var(--cor-titulo-forte), 0 0 5px var(--cor-titulo-forte), 0 0 2px var(--cor-titulo-forte), 0 0 10px var(--cor-titulo-forte), 0 0 10px var(--cor-titulo-forte)
+    }
+  
+    to {
+      text-shadow: 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-marrom-fraco), 0 0 .5px var(--cor-titulo-forte), 0 0 5px var(--cor-titulo-forte), 0 0 .5px var(--cor-titulo-forte), 0 0 5px var(--cor-titulo-forte), 0 0 2px var(--cor-titulo-forte)
+    }
+  }

@@ -82,12 +82,31 @@ main{
     background-color: var(--cor-vermelha-principal);
 }
 
+.selecao-de-personagens .personagem-grande.personagem-jogador-1 .nome .escolha-jogador1{
+    color: var(--cor-azul-media);
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+    font-size: 40px;
+    opacity: 0;
+}
+.selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome .escolha-jogador2{
+    color: var(--cor-vermelha-media);
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+    font-size: 40px;
+}
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-1.escolha-selecionada .nome .escolha-jogador1{
+    opacity: 1;
+}
+
 .selecao-de-personagens .lista-de-personagens{
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
     justify-content: center;
     gap: 12px;
+    z-index: 1;
 }
 
 .selecao-de-personagens .lista-de-personagens .personagem{
@@ -109,6 +128,11 @@ main{
 }
 
 .selecao-de-personagens .lista-de-personagens .personagem.selecionado{
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+.selecao-de-personagens .lista-de-personagens .personagem.escolhido{
     border: 2px solid var(--cor-azul-media);
     animation: c-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
@@ -179,4 +203,44 @@ main{
     color: var(--cor-azul-media);
     animation: text-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem .escolha{
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    left: 34px;
+    color: var(--cor-azul-media);
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+.selecao-de-personagens .lista-de-personagens .personagem.escolhido .escolha{
+    display: block;
+}
+
+.selecao-de-personagens .lista-de-personagens .btn-jogar{
+    opacity: 0;
+    color: #000000ea;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 102px;
+    -webkit-text-stroke: 2px var(--cor-titulo-forte);
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+    cursor: default;
+}
+.selecao-de-personagens .lista-de-personagens .btn-jogar.ativo{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.selecao-de-personagens .lista-de-personagens .voltar-para-tela-principal{
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 102px;
+    font-family: 'command';
+    animation: text-glowing-orange .3s ease-in-out infinite;
+    animation-direction: alternate;
+    color: var(--cor-menu-principal);
+    margin-left: 100px;
 }

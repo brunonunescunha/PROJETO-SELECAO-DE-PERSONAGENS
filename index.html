@@ -10,88 +10,32 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/fontes.css">
     <link rel="stylesheet" href="src/css/animacoes.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/media.css">
+    <link rel="stylesheet" href="src/css/index1/style1.css">
+    <link rel="stylesheet" href="src/css/index1/media1.css">
 
-    <title>Seleção de personagem</title>
-    
+    <title>Super smash bros ultimate</title>
 </head>
 
-<body>
-    <main>
-
-        <header class="cabecalho">
-            <h1 class="titulo">Character Select</h1>
-        </header>
-
-        <div class="selecao-de-personagens">
-
-            <div class="personagem-grande personagem-jogador-1">
-                <img src="src/img/mario.png" alt="personagem selecao jogador 1" id="personagem-jogador-1">
-                <div class="nome">
-                    <h2 id="nome-jogador">Mario</h2>
-                </div>
-            </div>
-
-            <ul class="lista-de-personagens">
-                <li class="personagem selecionado  " id="mario" data-nome="Mario">
-                    <span class="tag">1P</span>
-                    <img src="src/img/mario.jpg" alt="Personagem Mario">
-                </li>
-                
-                <li class="personagem " id="donkey-kong" data-nome="Donkey-kong">
-                    <span class="tag">1P</span>
-                    <img src="src/img/donkey-kong.jpg" alt="Personagem Donkey-kong">
-                </li>
-
-                <li class="personagem " id="link" data-nome="Link">
-                    <span class="tag">1P</span>
-                    <img src="src/img/link.jpg" alt="Personagem Link">
-                </li>
-
-                <li class="personagem " id="kirby" data-nome="Kirby">
-                    <span class="tag">1P</span>
-                    <img src="src/img/kirby.jpg" alt="Personagem Kirby">
-                </li>
-
-                <li class="personagem " id="pikachu" data-nome="Pikachu">
-                    <span class="tag">1P</span>
-                    <img src="src/img/pikachu.jpg" alt="Personagem Pikachu">
-                </li>
-
-                <li class="personagem jogardor-2-selecionado" id="peach" data-nome="Peach">
-                    <span class="tag">2P</span>
-                    <span class="tag2">1P</span>
-                    <img src="src/img/peach.jpg" alt="Personagem Peach">
-                </li>
-
-                <li class="personagem " id="zelda" data-nome="Princesa Zelda">
-                    <span class="tag">1P</span>
-                    <img src="src/img/zelda.jpg" alt="Personagem Princesa Zelda">
-                </li>
-
-                <li class="personagem " id="sonic" data-nome="Sonic">
-                    <span class="tag">1P</span>
-                    <img src="src/img/sonic.jpg" alt="Personagem sonic">
-                </li>
-
-                <li class="personagem " id="pac-man" data-nome="Pac-man">
-                    <span class="tag">1P</span>
-                    <img src="src/img/pac-man.jpg" alt="Personagem Pac-man">
-                </li>
+<body class="body mostrar-menu">
+    <div id="tela-inicial" class="tela-inicial">
+        <h1 class='titulo ativo'>Super smash bros ultimate</h1>
+        <a href="#">
+            <h2 id="start" class="start">Start Game</h2>
+        </a>
+        <nav class="menu ">
+            <ul class="menu-principal">
+                <li id="player1" class="texto-menu"><a href="index2.html">Jogador 1</a></li>
+                <li class="texto-menu jogador2"><a href="#">Jogador 2</a></li>
+                <li id="btn-creditos" class="texto-menu"><a href="#">Creditos</a></li>
+                <li id="btn-sair" class="texto-menu"><a href="#">Sair</a></li>
             </ul>
-
-            <div class="personagem-grande personagem-jogador-2">
-                <img src="src/img/peach1.png" alt="personagem selecao jogador 2" id="personagem-jogador-2">
-
-                <div class="nome">
-                    <h2>Peach</h2>
-                </div>
-
-            </div>
-        </div>
-        <script src="src/js/index.js"></script>
-    </main>
+        </nav>
+        <a class="nome" href="https://github.com/brunonunescunha" target="_blank">BRUNONUNESCUNHA</a>
+        <div id="voltar" class="voltar">Voltar para menu</div>
+    </div>
+    <audio class="audio-menu" src="src/audio/menu.mp3"></audio>
+    <audio class="audio-click" src="src/audio/click-btn.mp3"></audio>
+    <script src="src/js/index1.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,34 @@
+@media(max-width:1440px){
+    .tela-inicial .titulo{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width:1280px){
+    .tela-inicial .titulo{
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width: 769px) {
+    .body.body.mostrar-menu::before{
+        background-image: url(../../img/bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+    }
+}
+@media(max-width: 460px){
+    .tela-inicial .titulo{
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .tela-inicial .menu .menu-principal .texto-menu {
+        font-size: 40px;
+    }
+    .tela-inicial .nome{
+        font-size: 25px;
+    }
+    
+}
