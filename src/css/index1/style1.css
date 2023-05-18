@@ -36,7 +36,6 @@ body {
 
 .tela-inicial .titulo {
     cursor: default;
-    opacity: 0;
     margin-bottom: 50px;
     text-transform: uppercase;
     font-size: 82px;
@@ -44,15 +43,16 @@ body {
     -webkit-text-stroke: 2px var(--cor-titulo-forte);
     animation: text-glowing-orange .3s ease-in-out infinite;
     animation-direction: alternate;
+    display: none;
 }
 
 .tela-inicial .titulo.ativo {
-    opacity: 1;
+    display: block;
 }
 
 .tela-inicial .start {
     font-family: 'command';
-    opacity: 0;
+    display: none;
     cursor: default;
     animation: text-glowing-orange .3s ease-in-out infinite;
     animation-direction: alternate;
@@ -63,12 +63,12 @@ body {
 }
 
 .tela-inicial .start.click-na-tela {
-    opacity: 1;
+    display: block;
     cursor: pointer;
 }
 
 .tela-inicial .start.click-na-tela.esconder-click {
-    opacity: 0;
+    display: none;
     cursor: default;
 }
 
@@ -93,20 +93,30 @@ body {
     cursor: default;
 }
 .tela-inicial .menu .menu-principal .texto-menu a {
-    opacity: 0;
+    display: none;
     transition: 0.15s ease-in-out;
     cursor: default;
     color: var(--cor-menu-principal);
 }
 
+
+
+.tela-inicial .menu .menu-principal .texto-menu a:hover{
+    transform: scale(1.2);
+}
+
+.tela-inicial .menu .menu-principal.escolha-de-opcao .texto-menu.jogador2 a:hover{
+    transform: scale(1);
+}
+
 .tela-inicial .menu .menu-principal.escolha-de-opcao .texto-menu a {
-    opacity: 1;
+    display: block;
     cursor: pointer;
 }
 
 .tela-inicial .nome {
     cursor: default;
-    opacity: 0;
+    display: none;
     font-family: 'command';
     color: var(--cor-azul-media);
     animation: text-glowing-blue .3s ease-in-out infinite;
@@ -114,13 +124,13 @@ body {
     font-size: 50px;
 }
 .tela-inicial .nome.mostrar{
-    opacity: 1;
+    display: block;
     cursor: pointer;
 }
 
 .tela-inicial .voltar{
     cursor: default;
-    opacity: 0;
+    display: none;
     font-family: 'command';
     animation: text-glowing-orange .3s ease-in-out infinite;
     animation-direction: alternate;
@@ -129,6 +139,6 @@ body {
     margin-top: 20px;
 }
 .tela-inicial .voltar.mostrar{
-    opacity: 1;
+    display: block;
     cursor: pointer;
 }

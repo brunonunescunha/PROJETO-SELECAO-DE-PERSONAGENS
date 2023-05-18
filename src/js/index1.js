@@ -3,8 +3,9 @@ const clickNoStart = document.getElementById("start")
 const creditos = document.getElementById("btn-creditos") 
 const voltarParaOMenuPrincipal = document.getElementById("voltar")
 const voltarParaTelaPrincipal = document.getElementById("btn-sair")
+const body = document.querySelector("body")
 
-inicioDaTela.addEventListener("mouseenter", () => {
+body.addEventListener("click", () => {
      const audioMenu = document.querySelector(".audio-menu")
     audioMenu.play()
 
@@ -15,8 +16,8 @@ inicioDaTela.addEventListener("click", () => {
     const usuarioClickTela = document.querySelector(".start")
     usuarioClickTela.classList.add("click-na-tela")
 
-    const audioClick = document.querySelector(".audio-click")
-    audioClick.play()
+    // const audioClick = document.querySelector(".audio-click")
+    // audioClick.play()
 })
 
 clickNoStart.addEventListener("click", () => {
@@ -53,7 +54,7 @@ creditos.addEventListener("click", () => {
 voltarParaOMenuPrincipal.addEventListener("click", () => {
     const audioClick = document.querySelector(".audio-click")
     audioClick.play()
-    console.log(voltarParaOMenuPrincipal );
+    
     const esconderNome = document.querySelector(".nome")
     esconderNome.classList.remove("mostrar")
 
