@@ -1,6 +1,7 @@
 body{
     font-family: 'ssf4', Courier, monospace ;
     background: var(--cor-secundaria);
+    cursor: default;
 }
 
 body::before{
@@ -88,12 +89,16 @@ main{
     animation-direction: alternate;
     font-size: 40px;
     opacity: 0;
+    position: relative;
+    z-index: 2;
 }
 .selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome .escolha-jogador2{
     color: var(--cor-vermelha-media);
     animation: text-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
     font-size: 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .selecao-de-personagens .personagem-grande.personagem-jogador-1.escolha-selecionada .nome .escolha-jogador1{
@@ -219,7 +224,7 @@ main{
 }
 
 .selecao-de-personagens .lista-de-personagens .btn-jogar{
-    opacity: 0;
+    display: none;
     color: #000000ea;
     text-transform: uppercase;
     font-size: 40px;
@@ -227,11 +232,11 @@ main{
     -webkit-text-stroke: 2px var(--cor-titulo-forte);
     animation: text-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
-    cursor: default;
+    cursor: pointer;
 }
 .selecao-de-personagens .lista-de-personagens .btn-jogar.ativo{
-    opacity: 1;
-    cursor: pointer;
+    display: block; 
+    margin-right: 10px;
 }
 
 .selecao-de-personagens .lista-de-personagens .voltar-para-tela-principal{
@@ -242,5 +247,5 @@ main{
     animation: text-glowing-orange .3s ease-in-out infinite;
     animation-direction: alternate;
     color: var(--cor-menu-principal);
-    margin-left: 100px;
+
 }
